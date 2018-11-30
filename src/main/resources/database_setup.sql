@@ -1,5 +1,6 @@
 /* ORACLE 10G DB */
 CREATE DATABASE studentdb;
 
-CREATE TABLE students(id INT, name VARCHAR(10), branch VARCHAR(10), photo BLOB, premium_basic TINYINT(1), ispeps TINYINT(1));
+CREATE TABLE student(id NUMBER, name VARCHAR(20), branch VARCHAR(20), photo BLOB, premium_basic NUMBER, ispeps NUMBER);
 
+INSERT INTO student VALUES(1, 'srikanth', 'IT', 'abc', 0, 0);
