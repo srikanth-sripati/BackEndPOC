@@ -4,18 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.backendpoc.repository.StudentRepository;
+import com.backendpoc.service.StudentService;
 
 @SpringBootApplication
 public class BackEndPocApplication {
 
-	@Autowired
-	private StudentRepository studentRepo;
-	
 	public static void main(String[] args) {
 		SpringApplication.run(BackEndPocApplication.class, args);
 		System.out.println("Hello");
 		System.out.println("Hello2u");
+		
+		StudentService service = new StudentService();
+		System.out.println(service.getAllStudents());
 		
 	}
 	

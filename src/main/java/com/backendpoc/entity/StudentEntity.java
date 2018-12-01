@@ -1,5 +1,7 @@
 package com.backendpoc.entity;
 
+import java.sql.Blob;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,7 +21,7 @@ public class StudentEntity {
 	private String branch;
 	
 	@Column(name="photo")
-	private Object photo;//
+	private Blob photo;//
 	
 	@Column(name="premium_basic")
 	private Boolean premium_basic;
@@ -51,11 +53,11 @@ public class StudentEntity {
 		this.branch = branch;
 	}
 
-	public Object getPhoto() {
+	public Blob getPhoto() {
 		return photo;
 	}
 
-	public void setPhoto(Object photo) {
+	public void setPhoto(Blob photo) {
 		this.photo = photo;
 	}
 
