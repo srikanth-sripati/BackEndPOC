@@ -21,7 +21,11 @@ public class StudentEntity {
 	private String branch;
 	
 	@Column(name="photo")
+<<<<<<< HEAD
 	private int photo;//
+=======
+	private Integer photo;//
+>>>>>>> branch 'master' of https://github.com/srikanth-sripati/BackEndPOC.git
 	
 	@Column(name="premium_basic")
 	private Boolean premium_basic;
@@ -53,11 +57,19 @@ public class StudentEntity {
 		this.branch = branch;
 	}
 
+<<<<<<< HEAD
 	public int getPhoto() {
+=======
+	public Integer getPhoto() {
+>>>>>>> branch 'master' of https://github.com/srikanth-sripati/BackEndPOC.git
 		return photo;
 	}
 
+<<<<<<< HEAD
 	public void setPhoto(int photo) {
+=======
+	public void setPhoto(Integer photo) {
+>>>>>>> branch 'master' of https://github.com/srikanth-sripati/BackEndPOC.git
 		this.photo = photo;
 	}
 
