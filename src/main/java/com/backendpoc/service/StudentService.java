@@ -12,9 +12,15 @@ public class StudentService {
 	@Autowired
 	private StudentRepository sr;
 	
-	public long getAllStudents()
+	List<StudentEntity> studentList;
+	public List<StudentEntity> getAllStudents()
 	{
-		return sr.count();
+		System.out.println("Trying in servicegetAllStudents");
+		return sr.findAll();
+	}
+	public void saveStudent(StudentEntity s)
+	{
+		sr.save(s);
 	}
 
 }
