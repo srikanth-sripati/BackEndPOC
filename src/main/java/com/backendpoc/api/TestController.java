@@ -16,13 +16,8 @@ public class TestController {
 	StudentService service;
 	
 	@RequestMapping("/testGet")
-<<<<<<< HEAD
-	StudentEntity testGet() {
-		return service.getAllStudents().get(0);
-=======
 	List<StudentEntity> testGet() {
 		return service.getAllStudents();
->>>>>>> branch 'master' of https://github.com/srikanth-sripati/BackEndPOC.git
 		
 	}
 }
