@@ -16,8 +16,8 @@ public class TestController {
 	StudentService service;
 	
 	@RequestMapping("/testGet")
-	String testGet() {
-		return service.getAllStudents().get(0).getName();
+	StudentEntity testGet() {
+		return service.getAllStudents().get(0);
 		
 	}
 }

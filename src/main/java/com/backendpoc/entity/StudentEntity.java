@@ -21,7 +21,7 @@ public class StudentEntity {
 	private String branch;
 	
 	@Column(name="photo")
-	private Blob photo;//
+	private int photo;//
 	
 	@Column(name="premium_basic")
 	private Boolean premium_basic;
@@ -53,11 +53,11 @@ public class StudentEntity {
 		this.branch = branch;
 	}
 
-	public Blob getPhoto() {
+	public int getPhoto() {
 		return photo;
 	}
 
-	public void setPhoto(Blob photo) {
+	public void setPhoto(int photo) {
 		this.photo = photo;
 	}
 
