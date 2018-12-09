@@ -1,6 +1,8 @@
 package com.backendpoc.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,14 @@ public class StudentService {
 	public void saveStudent(StudentEntity s)
 	{
 		sr.save(s);
+	}
+	
+	public Optional<StudentEntity> getStudentById(Integer id) {
+		return sr.findById(id);
+	}
+	
+	public void deleteById(Integer id) {
+		sr.deleteById(id);
 	}
 
 }

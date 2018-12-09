@@ -1,6 +1,7 @@
 package com.backendpoc.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -14,5 +15,9 @@ public interface StudentRepository extends CrudRepository<StudentEntity, Integer
 	List<StudentEntity> findAll();
 	//save
 	StudentEntity save(StudentEntity s);
+	//getById
+	Optional<StudentEntity> findById(Integer id);
+	//deleteById
+	void deleteById(Integer id);
 	
 }
